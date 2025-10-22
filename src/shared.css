@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Grotesk';
+    overflow-x: hidden
+}
+
+body {
+    height: 100%;
+    background-color: whitesmoke;
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #000;
+}
+
+button {
+    font-family: 'Space Grotesk';
+    color: rgb(143, 0, 0);
+    font-size: 2rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+/* NavBar */
+.nav__li {
+  list-style: none;
+  display: inline;
+  font-size: 1rem;
+  row-gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav__li a:hover {
+    color: #940000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    background-color: #400000;
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+}
+
+.burger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 5rem;
+}
+
+#eddLogo__nav {
+    height: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    li {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 9.2rem;
+        right: 0;
+        flex-direction: column;
+        background-color: #2d2d2d;
+        width: 100%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        text-align: center;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        transform: translateX(100vw);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+        z-index: 2000;
+        overflow-x: hidden;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        z-index: 3;
+    }
+
+    .nav__li {
+        margin: 2.5rem 0;
+        display: block;
+    }
+
+    .nav__li a:hover {
+        color: #940000;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #hbhLogoHead__nav {
+        height: 4rem;
+    }
+}
