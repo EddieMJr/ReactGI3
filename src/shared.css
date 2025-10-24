@@ -12,7 +12,6 @@ html {
 body {
     height: 100%;
     background-color: whitesmoke;
-    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +30,12 @@ button {
     font-size: 2rem;
     padding: .5rem;
     margin: .5rem;
+}
+
+input {
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1.5rem;
 }
 
 /* NavBar */
@@ -81,10 +86,6 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: #fff;
     border-radius: 5rem;
-}
-
-#eddLogo__nav {
-    height: 7rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -148,9 +149,5 @@ a {
 
     .burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
-
-    #hbhLogoHead__nav {
-        height: 4rem;
     }
 }
