@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 button {
     font-family: 'Space Grotesk';
-    color: rgb(143, 0, 0);
+    color: #008f1d;
     font-size: 2rem;
     padding: .5rem;
     margin: .5rem;
@@ -49,16 +49,16 @@ input {
 }
 
 .nav__li a:hover {
-    color: #940000;
+    color: #00941e;
 }
 
-a {
+.nav__li a {
     text-decoration: none;
     color: #fff;
 }
 
 .header {
-    background-color: #400000;
+    background-color: #004001;
     position: relative;
     z-index: 1000;
     width: 100vw;
@@ -99,7 +99,7 @@ a {
 
     .nav-menu {
         position: absolute;
-        top: 9.2rem;
+        top: 3.8rem;
         right: 0;
         flex-direction: column;
         background-color: #2d2d2d;
@@ -131,7 +131,7 @@ a {
     }
 
     .nav__li a:hover {
-        color: #940000;
+        color: #00941b;
     }
 
     .burger {

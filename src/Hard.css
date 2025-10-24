@@ -1,0 +1,12 @@
+.topList__section a {
+    text-decoration: none;
+    color: #008f1d;
+}
+
+button {
+    padding: .2rem;
+}
+
+input {
+    padding: .2rem
+}
